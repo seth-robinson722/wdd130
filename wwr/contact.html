@@ -4,59 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <meta name="description" content="A contact page for messaging members of the team">
+    <title>Contact Us | Texas Rafting</title>
+    <meta name="description" content="Contact Texas Rafting for reservations, questions, or general inquiries.">
     <meta name="author" content="Seth Robinson">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
+        <img class="logo" src="images/rafting-site-logo.jpg" alt="Texas Rafting Logo">
+
         <nav>
-            <img src="images/rafting-site-logo.jpg" alt="Rafting Site Logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/hero-image.jpg" alt="large rafting image in background">
-            <h1>Texas Rafting</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="happy client">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. Ut enim ad minim veniam</p>
-            </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna
-                aliqua. Ut enim ad minim veniam</p>
+
+        <!-- COMPANY INFO -->
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
+
+        <!-- MAP + FORM -->
+        <section class="contact-grid">
+
+            <!-- MAP -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144!2d-122.083851!3d37.386051!"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- FORM -->
+            <form class="contact-form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+
+                <p class="form-label">Message Purpose</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message"></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="btn-submit">Get in Touch!</button>
+
+            </form>
+
         </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-gallery">
+
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <figcaption>Maria Sanchez — Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <figcaption>James Nolan — Safety Coordinator</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>Lauren Clark — Guest Services</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <p>©️ ⭕ 2025 ⭕ Texas Rafting ⭕ Seth Robinson</p>
+        <p>©️ 2025 Texas Rafting — Seth Robinson</p>
+
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook Icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram-square.jpg" alt="Instagram Icon">
-            </a>
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram-square.jpg" alt="Instagram"></a>
         </nav>
     </footer>
+
 </body>
 
 </html>
