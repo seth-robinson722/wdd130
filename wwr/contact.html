@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Texas Rafting</title>
-    <meta name="description" content="Contact Texas Rafting for reservations, questions, or general inquiries.">
+    <meta name="description"
+        content="Contact Texas Rafting for questions about our services, reservations, or website suggestions.">
     <meta name="author" content="Seth Robinson">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -19,91 +20,76 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <!-- COMPANY INFO -->
+        <!-- CONTACT INFO SECTION -->
         <section class="contact-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+            <h1>Contact Texas Rafting</h1>
+
+            <p><strong>Address:</strong> 123 River Lane, Austin, TX 78701</p>
+            <p><strong>Phone:</strong> (512) 555-1234</p>
+            <p><strong>Email:</strong> info@texasrafting.com</p>
+
+            <!-- Google Map Embed -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.5704784833375!2d-97.74306068488292!3d30.267153981822055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b57c1b2d2b55%3A0x1c6cfa2f0669e3f6!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%" height="400" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <!-- MAP + FORM -->
-        <section class="contact-grid">
-
-            <!-- MAP -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144!2d-122.083851!3d37.386051!"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-            <!-- FORM -->
-            <form class="contact-form">
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email">
-
-                <p class="form-label">Message Purpose</p>
-
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type your message"></textarea>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit" class="btn-submit">Get in Touch!</button>
-
-            </form>
-
-        </section>
-
-        <!-- EMPLOYEES -->
+        <!-- EMPLOYEE PROFILES -->
         <section class="employees">
-            <h2>We Are Here to Serve You</h2>
+            <h2>Meet Our Team</h2>
 
-            <div class="employee-gallery">
-
-                <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1">
-                    <figcaption>Maria Sanchez — Lead Guide</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2">
-                    <figcaption>James Nolan — Safety Coordinator</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3">
-                    <figcaption>Lauren Clark — Guest Services</figcaption>
-                </figure>
-
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Jane Doe, Guide">
+                <p>Jane Doe - Senior Guide</p>
             </div>
+
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="John Smith, Instructor">
+                <p>John Smith - Instructor</p>
+            </div>
+
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Sara Lee, Manager">
+                <p>Sara Lee - Operations Manager</p>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of your message:</p>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label><br>
+
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label><br>
+
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
 
     </main>
@@ -117,7 +103,6 @@
             <a href="https://instagram.com"><img src="images/instagram-square.jpg" alt="Instagram"></a>
         </nav>
     </footer>
-
 </body>
 
 </html>
