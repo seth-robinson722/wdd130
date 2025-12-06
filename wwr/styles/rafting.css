@@ -1,77 +1,205 @@
+/* ------------------------------ */
+/* GLOBAL STYLES */
+/* ------------------------------ */
+
 :root {
-    --primary-color: #055a05; /* forest green */
-    --secondary-color: #f4a261; /* warm sand */
-    --accent1-color: #264653; /* dark slate blue */
-    --accent2-color: #e9c46a; /* light golden yellow*/
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --primary: #c8b6ff;   
+    --dark: #333;
+    --light: #fff;
+    --max-width: 1200px;
+    --spacing: 1.5rem;
 }
-* {
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.5;
+    color: var(--dark);
 }
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-header, main, footer {
-    width: 840px;
+
+main {
+    max-width: var(--max-width);
     margin: 0 auto;
+    padding: var(--spacing);
 }
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+
+
+/* ------------------------------ */
+/* HEADER */
+/* ------------------------------ */
+
+header {
+    background: var(--primary);
+    padding: 1rem 2rem;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    column-gap: 2rem;
 }
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+
+header .logo {
+    width: 120px;
 }
-.socialmedia a {
+
+nav ul {
+    list-style: none;
+    display: flex;          /* FLEXBOX for horizontal layout */
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------ */
+/* HERO SECTION */
+/* ------------------------------ */
 
 .hero {
     position: relative;
+    text-align: center;
+    margin-top: 2rem;
 }
+
+.hero > img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .hero h1 {
     position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
+
 .hero article {
-    position: absolute;
+    background: white;
+    padding: 1rem;
+    width: 70%;
+    margin: 1.5rem auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-}
-article {
-    position: absolute;
-    top: 400px;
-    width: 90%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
+
 .hero article img {
-    float: right;
-    width: 125px;
-    border: 1px black;
+    width: 140px;
+    border-radius: 6px;
 }
-section h2 {
+
+
+/* ------------------------------ */
+/* HISTORY SECTION */
+/* ------------------------------ */
+
+.history {
+    margin-top: 3rem;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent2-color);
+}
+
+.history-layout {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: var(--spacing);
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.history-layout img {
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+/* ------------------------------ */
+/* ADVENTURES SECTION */
+/* ------------------------------ */
+
+.adventures {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.adventure-gallery {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;  /* FIVE ACROSS */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    width: calc(20% - 1rem); /* 5 equal items across */
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: #444;
+}
+
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+footer {
+    margin-top: 3rem;
+    background: var(--primary);
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 4px;
 }
