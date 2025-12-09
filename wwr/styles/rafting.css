@@ -30,7 +30,11 @@ img {
     display: block;
 }
 
+/* Two-column layout for map and form */
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--spacing);
@@ -222,6 +226,7 @@ footer .socialmedia img {
     margin: 2rem auto;
     text-align: center;
     line-height: 1.8;
+    grid-column: 1 / -1;
 }
 
 .contact-info h1 {
@@ -233,21 +238,6 @@ footer .socialmedia img {
     margin: 0.3rem 0;
 }
 
-/* Two-column layout for map and form */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--spacing);
-}
-
-/* Make contact info span full width */
-.contact-info {
-    grid-column: 1 / -1;
-}
-
 /* Map takes left column */
 .contact-info iframe {
     width: 100%;
@@ -255,6 +245,8 @@ main {
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-top: 1rem;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 /* Form takes right column */
@@ -267,12 +259,6 @@ main {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
-}
-
-/* Move map to left column, same row as form */
-.contact-info iframe {
-    grid-column: 1;
-    grid-row: 2;
 }
 
 /* Employees section spans full width below */
