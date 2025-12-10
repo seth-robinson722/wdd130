@@ -285,9 +285,9 @@ footer .socialmedia img {
     width:100%; padding:8px; margin-top:5px; border-radius:4px; border:1px solid var(--secondary-color);
 }
 .contact-page .contact-form .submit-btn{
-    margin-top:15px; padding:10px 20px; background-color:#0077cc; color:white; border:none; border-radius:5px; cursor:pointer; width:100%;
+    margin-top:15px; padding:10px 20px; background-color: var(--primary-color); color: var(--light-color); border:none; border-radius:5px; cursor:pointer; width:100%;
 }
-.contact-page .contact-form .submit-btn:hover{ background-color:var(--accent2-color); }
+.contact-page .contact-form .submit-btn:hover{ background-color:var(--primary-color); }
 
 /* employees area spans both columns below */
 .contact-page .employees{
