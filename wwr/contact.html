@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <img class="logo" src="images/rafting-site-logo.jpg" alt="Texas Rafting Logo">
 
@@ -25,75 +26,84 @@
         </nav>
     </header>
 
+    <!-- CONTACT PAGE GRID -->
     <main class="contact-page">
 
-        <!-- CONTACT INFO SECTION -->
+        <!-- COMPANY INFO (FULL WIDTH TOP) -->
         <section class="contact-info">
             <h1>Contact Texas Rafting</h1>
 
-            <p><strong>Address:</strong> 123 River Lane, Austin, TX 78701</p>
-            <p><strong>Phone:</strong> (512) 555-1234</p>
-            <p><strong>Email:</strong> info@texasrafting.com</p>
-
-            <!-- Google Map Embed -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.5704784833375!2d-97.74306068488292!3d30.267153981822055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b57c1b2d2b55%3A0x1c6cfa2f0669e3f6!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
-                width="100" height="400" allowfullscreen="" loading="lazy"></iframe>
+            <p>123 River Lane</p>
+            <p>Austin, TX 78701</p>
+            <p>(512) 555-1234</p>
+            <p>info@texasrafting.com</p>
         </section>
 
-        <!-- EMPLOYEE PROFILES -->
+        <!-- MAP (LEFT COLUMN) -->
+        <section class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.5704784833375!2d-97.74306068488292!3d30.267153981822055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b57c1b2d2b55%3A0x1c6cfa2f0669e3f6!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%" height="400" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <!-- CONTACT FORM (RIGHT COLUMN) -->
+        <aside class="contact-form">
+            <h2>Get in Touch!</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <p><strong>Message Purpose</strong></p>
+
+                <label><input type="radio" name="purpose" value="General Inquiry" required>
+                    General Inquiry</label>
+
+                <label><input type="radio" name="purpose" value="Reservation Question">
+                    Reservation Question</label>
+
+                <label><input type="radio" name="purpose" value="Website Suggestion">
+                    Website Suggestion</label>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">Get in Touch!</button>
+            </form>
+        </aside>
+
+        <!-- EMPLOYEE PROFILES (FULL WIDTH BELOW) -->
         <section class="employees">
-            <h2>Meet Our Team</h2>
+            <h2>We Are Here to Serve You</h2>
 
             <div class="employee">
-                <img src="images/jane-doe.jpg" alt="Jane Doe, Guide">
+                <img src="images/jane-doe.jpg" alt="Jane Doe">
                 <p>Jane Doe - Senior Guide</p>
             </div>
 
             <div class="employee">
-                <img src="images/john-smith.jpg" alt="John Smith, Instructor">
+                <img src="images/john-smith.jpg" alt="John Smith">
                 <p>John Smith - Instructor</p>
             </div>
 
             <div class="employee">
-                <img src="images/sara-lee.jpg" alt="Sara Lee, Manager">
+                <img src="images/sara-lee.jpg" alt="Sara Lee">
                 <p>Sara Lee - Operations Manager</p>
             </div>
         </section>
 
-        <!-- CONTACT FORM -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <p>Purpose of your message:</p>
-                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                <label for="general">General Inquiry</label><br>
-
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                <label for="reservation">Reservation Question</label><br>
-
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                <label for="suggestion">Website Suggestion</label><br>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
-
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>©️ 2025 Texas Rafting — Seth Robinson</p>
 
@@ -103,6 +113,7 @@
             <a href="https://instagram.com"><img src="images/instagram-square.jpg" alt="Instagram"></a>
         </nav>
     </footer>
+
 </body>
 
 </html>
