@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Texas Rafting</title>
-    <meta name="description"
-        content="Texas Rafting offers thrilling white water rafting adventures for all skill levels. Explore trips, book adventures, and learn about our services.">
+    <title>Texas Rafting | Home</title>
+    <meta name="description" content="Welcome to Texas Rafting — your home for thrilling white water adventures.">
     <meta name="author" content="Seth Robinson">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <img class="logo" src="images/rafting-site-logo.jpg" alt="Texas Rafting Logo">
 
@@ -29,62 +30,79 @@
 
         <!-- HERO -->
         <section class="hero">
-            <img src="images/rafting-group-hero-image-home.jpg" alt="Rafting group on turbulent white water rapids">
-            <h1>Experience the Adventure of a Lifetime</h1>
+            <img src="images/hero-image.jpg" alt="Rafting group riding powerful white water rapids">
+
+            <h1>Adventure Starts Here</h1>
+
+            <article class="hero-card">
+                <h2>Experience Texas White Water</h2>
+                <p>Guided trips for beginners, families, and expert rafters. Safety, adventure, and unforgettable fun.
+                </p>
+                <a class="cta-button" href="trips.html">See Our Trips</a>
+            </article>
         </section>
 
         <!-- NEWSLETTER -->
         <section class="newsletter">
-            <h2>Join Our Adventure Newsletter</h2>
-            <p>Stay updated with trip news, discounts, and rafting tips.</p>
+            <h2>Join Our Newsletter</h2>
+            <p>Get updates on new adventures, seasonal deals, and special events.</p>
 
             <form>
-                <label for="fullname">Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <button type="submit">Subscribe</button>
+                <button type="submit">Sign Up</button>
             </form>
         </section>
 
-        <!-- CALL TO ACTION -->
-        <section class="cta">
-            <h2>Your Next Adventure Awaits!</h2>
-            <p>Explore our most popular white water trips and plan the perfect outdoor experience.</p>
-            <a class="cta-button" href="trips.html">View Our Trips</a>
-        </section>
-
-        <!-- GRID LAYOUT SECTION -->
-        <section class="features">
+        <!-- PURPOSE & OFFERINGS GRID -->
+        <section class="purpose-offerings">
             <h2>Why Choose Texas Rafting?</h2>
 
-            <div class="grid">
-                <figure>
-                    <img src="images/rafting-team.jpg" alt="Experienced rafting guides assisting guests">
-                    <figcaption>Professional Guides</figcaption>
-                </figure>
+            <div class="po-grid">
 
-                <p>
-                    Our expert guides ensure safe and exhilarating adventures. With years of experience navigating Texas
-                    rivers, we provide unforgettable trips for all skill levels.
-                </p>
+                <div class="po-item">
+                    <img src="images/rafting-team.jpg" alt="Rafting group preparing boats near scenic canyon">
+                    <h3>Our Purpose</h3>
+                    <p>
+                        We help people connect with nature through thrilling white-water experiences.
+                        Every trip focuses on safety, teamwork, and the joy of exploration.
+                    </p>
+                </div>
 
-                <p>
-                    From calm scenic floats to adrenaline-pumping rapids, we offer a wide range of rafting experiences
-                    tailored to your preferred adventure level.
-                </p>
+                <div class="po-item">
+                    <img src="images/trip-halfday.jpg" alt="Raft navigating calm river section with beautiful cliffs">
+                    <h3>Our Offerings</h3>
+                    <p>
+                        We offer half-day floats, full-day challenges, and expert-level canyon runs.
+                        Something for every skill level—from beginners to adventure seekers.
+                    </p>
+                </div>
 
-                <figure>
-                    <img src="images/rafting-river.jpg" alt="Beautiful river surrounded by canyon walls">
-                    <figcaption>Unmatched Scenery</figcaption>
-                </figure>
+                <div class="po-item">
+                    <h3>Expert Guides</h3>
+                    <p>
+                        All guides are certified in swiftwater rescue and wilderness safety.
+                        You’ll be in good hands from launch to landing.
+                    </p>
+                </div>
+
             </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-large">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Discover all our trips and find the perfect white water experience.</p>
+            <a class="cta-button" href="trips.html">Explore Trips</a>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>©️ 2025 Texas Rafting — Seth Robinson</p>
 
